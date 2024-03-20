@@ -138,3 +138,11 @@ input {
     padding: 24px 0 24px;
   }
 }
+/* -----------------section hero---------------------------*/
+.hero {
+  background-color: linear-gradient(
+      rbga(17, 17, 17, 0.4),
+      rbga(17, 17, 17, 0.4)
+    ),
+    url(../images/hero/chocolate-covered-cocoa-powder-ds.jpg);
+}
