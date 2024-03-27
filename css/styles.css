@@ -49,7 +49,7 @@ input {
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    max-width: 736px;
   }
 }
 @media screen and (min-width: 1168px) {
@@ -145,4 +145,149 @@ input {
       rbga(17, 17, 17, 0.4)
     ),
     url(../images/hero/chocolate-covered-cocoa-powder-ds.jpg);
+}
+
+/* ------------------section reviews---------------------- */
+.rev-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.span-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fd9222;
+}
+.rev-list {
+  display: flex;
+  width: 300%;
+  transition: transform 1000ms ease-in-out;
+}
+/* .rev-list:checked{
+
+} */
+.rev-item {
+  border: 1px solid rgba(17, 17, 17, 0.5);
+  border-radius: 15px;
+  width: calc(100% / 3);
+  height: 200px;
+  /* box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03); */
+  background: #fff;
+  flex-shrink: 0;
+}
+.list-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+}
+.list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.rev-btn {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+}
+.sliders {
+  position: relative;
+  /* max-width: 335px; */
+  overflow: hidden;
+  margin: 0 auto;
+}
+.pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.pagination label {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #111;
+  transition: width 1000ms ease-in-out, border 1000ms ease-in-out;
+}
+.sliders input {
+  display: none;
+}
+#slide2:checked ~ .rev-list {
+  transform: translateX(-33.33%);
+}
+#slide3:checked ~ .rev-list {
+  transform: translateX(-66.66%);
+}
+#slide1:checked ~ .rev-list {
+  transform: translateX(0);
+}
+#slide1:checked ~ .pagination [for="slide1"],
+#slide2:checked ~ .pagination [for="slide2"],
+#slide3:checked ~ .pagination [for="slide3"] {
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .rev-title {
+    font-size: 24px;
+  }
+  .span-title {
+    font-size: 24px;
+  }
+  .rev-list {
+    width: 100%;
+    gap: 16px;
+  }
+  .rev-item {
+    width: calc((100% - 16px) / 2);
+  }
+  .list-title {
+  }
+  .list-text {
+  }
+  .pagination [for="slide3"] {
+    display: none;
+  }
+  #slide2:checked ~ .rev-list {
+    transform: translateX(-51.1%);
+  }
+}
+@media screen and (min-width: 1168px) {
+  .rev-title {
+  }
+  .span-title {
+  }
+  .rev-list {
+    gap: 20px;
+  }
+  .rev-item {
+    width: calc((100% - 40px) / 3);
+  }
+  .list-title {
+  }
+  .list-text {
+  }
+  .pagination {
+    display: none;
+  }
 }

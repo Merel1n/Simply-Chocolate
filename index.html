@@ -6,7 +6,10 @@
     <title>Simple Chokolate</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,7 +64,7 @@
       </div>
     </header>
     <main>
-      <section class="hero conteiner">
+      <!-- <section class="hero conteiner">
         <h1>
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
@@ -196,38 +199,54 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section>
-        <h2>chocolate is loved</h2>
-        <ul>
-          <li>
-            <img src="./images/reviews/victoria-dobrzhanska-ds.png" alt="" />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
-            </p>
-          </li>
-          <li>
-            <img src="./images/reviews/nazar-babenko-ds.png" alt="" />
-            <h3>Nazar Babenko</h3>
-            <p>
-              This chocolate confection is a delight! A delight! The wafer is
-              light and crisp, the hazelnut cream is smooth, and the chocolate
-              is good.
-            </p>
-          </li>
-          <li>
-            <img src="./images/reviews/olena-kampusch-ds.png" alt="" />
-            <h3>Olena Kampusch</h3>
-            <p>
-              Chocolate is a family favourite treat. Love the delicious smooth
-              chocolate and the creaminess inside. The wafer is soft but
-              crunchy.
-            </p>
-          </li>
-        </ul>
-        <button type="button"></button>
+      </section> -->
+      <section class="page-reviews conteiner">
+        <h2 class="rev-title">
+          <span class="span-title">chocolate</span> is loved
+        </h2>
+        <div class="sliders">
+          <input name="slide" type="radio" id="slide1" checked />
+          <input name="slide" type="radio" id="slide2" />
+          <input name="slide" type="radio" id="slide3" />
+          <ul class="rev-list">
+            <li class="rev-item slide1">
+              <img
+                src="./images/reviews/victoria-dobrzhanska-ds.png"
+                alt="victoria-dobrzhanska"
+              />
+              <h3 class="list-title">Victoria Dobrzhanska</h3>
+              <p class="list-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="rev-item slide2">
+              <img src="./images/reviews/nazar-babenko-ds.png" alt="" />
+              <h3 class="list-title">Nazar Babenko</h3>
+              <p class="list-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="rev-item slide3">
+              <img src="./images/reviews/olena-kampusch-ds.png" alt="" />
+              <h3 class="list-title">Olena Kampusch</h3>
+              <p class="list-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <div class="pagination">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
+
+        <button type="button" class="rev-btn">Leave a review</button>
       </section>
     </main>
     <footer></footer>
