@@ -300,9 +300,9 @@ input {
 .benefits {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #1e1823;
 }
 .benefits-conteiner {
-  background-color: #1e1823;
   color: #fff;
   padding: 20px;
 }
@@ -329,9 +329,220 @@ input {
   margin-bottom: 18px;
 }
 .benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .benefits-item {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .benefits-item {
+    width: calc(100% / 3);
+  }
+}
+/* ------------------section ingredients---------------------- */
+.ingredients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.box {
+  width: 100%;
+  margin: 32px auto 32px auto;
+}
+.ingredients-title {
+  width: 283px;
+  margin: auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.ingredients-span {
+  color: #fd9222;
+}
+.ingredients-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.ingredients-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ingredients-item-1 {
+  border-radius: 15px;
+  width: 335px;
+  height: 270px;
+  background: #fd9222;
+}
+.ingredients-img {
+  width: 224px;
+  height: 171px;
+  margin: 28px auto 25px;
+}
+.ing-title{
+  font-weight: 600;
+font-size: 14px;
+line-height: 1.28571;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+margin-left: 28px;
+}
+.item1{
+  color: #fff;
+}
+.ingredients-item-2 {
+  border: 1px solid #fd9222;
+border-radius: 15px;
+width: 335px;
+height: 270px;
+}
+.ingredients-item-3{
+  border-radius: 15px;
+width: 335px;
+height: 270px;
+background: #1e1823;
+}
+@media screen and (min-width: 768px) {
+  .conteiner{
+    padding: 0;
+  }
+  .ingredients {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .box {
+    width: 486px;
+    margin: 50px auto 50px auto;
+  }
+  .ingredients-title {
+    width: 411px;
+  }
+  .ingredients-box {
+    flex-direction: row;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients-box {
+    gap: 15px;
+    flex-wrap: nowrap;
+  }
+}
+
+/* --------------------made-section-------------------------- */
+.made-section{
+  padding-bottom: 60px;
+}
+#made{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.span-made{
+  color: #fd9222;
+}
+.made-img{
+  border-radius: 15px;
+  width: 335px;
+  height: 500px;
+margin: 0 auto 20px;
+background: rgba(0, 0, 0, 0.4), url("./images/how-it-is-made/hot-chocolate-ds.jpg");
+}
+.made-container{
+border-radius: 15px;
+width: 335px;
+height: 456px;
+margin: auto;
+padding: 0 15px;
+}
+.made-title{
+  font-weight: 600;
+font-size: 18px;
+line-height: 1.33333;
+margin-bottom: 20px;
+}
+.made-list{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.made-item{
+  display: flex;
+  gap: 8px;
+}
+.made-svg{
+  border-radius: 100%;
+fill: #4c4c4c;
+stroke-width: 1px;
+stroke: #eceded;
+}
+.made-text{
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.28571;
+letter-spacing: -0.02em;
+width: 291px;
+}
+@media screen and (min-width: 768px) {
+  .made-section{
+    padding-bottom: 80px;
+  }
+  .made-img{
+  width: 614px;
+  height: 400px;
+  margin: 0 auto 20px;
+  background: rgba(0, 0, 0, 0.4), url("./images/how-it-is-made/hot-chocolate-ds.jpg");
+  }
+  .made-container{
+  width: 614px;
+  height: 356px;
+  }
+  .made-title{
+  margin-bottom: 28px;
+  }
+  .made-text{
+  width: 464px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .made-flexbox{
+    display: flex;
+    gap: 20px;
+  }
+  .made-text{
+    width: 436px;
+    }
+}
 /* ------------------section reviews---------------------- */
+.page-reviews{
+  padding-bottom: 60px;
+}
 .rev-title {
   font-weight: 600;
   font-size: 20px;
@@ -340,14 +551,9 @@ input {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 32px;
 }
 .span-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
   color: #fd9222;
 }
 .rev-list {
@@ -355,15 +561,11 @@ input {
   width: 300%;
   transition: transform 1000ms ease-in-out;
 }
-/* .rev-list:checked{
-
-} */
 .rev-item {
   border: 1px solid rgba(17, 17, 17, 0.5);
   border-radius: 15px;
   width: calc(100% / 3);
   height: 200px;
-  /* box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03); */
   background: #fff;
   flex-shrink: 0;
 }
@@ -388,10 +590,11 @@ input {
   padding: 14px 40px;
   width: 222px;
   height: 50px;
+  margin: 32px auto 0;
+  display: block;
 }
 .sliders {
   position: relative;
-  /* max-width: 335px; */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -434,6 +637,7 @@ input {
 @media screen and (min-width: 768px) {
   .rev-title {
     font-size: 24px;
+    margin-bottom: 50px;
   }
   .span-title {
     font-size: 24px;
